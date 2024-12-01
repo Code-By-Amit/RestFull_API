@@ -15,10 +15,10 @@
         <div class="hero-section">
             <h1 class="title">Welcome to My RestFull Api</h1>
             <p class="subtitle">Explore The End Points. </p>
+            <h1>API Documentation</h1>
+            <h2>Items API</h2>
         </div>
 
-        <h1>API Documentation</h1>
-        <h2>Items API</h2>
 
         <!-- /api/items Endpoint -->
         <div class="endpoint">
@@ -32,7 +32,7 @@
                 <li><span class="parameter">page</span> (optional): The page number for pagination. Default is 1.</li>
             </ul>
             <h4>Example Request</h4>
-            <p class="code">GET http://localhost:3000/api/items?all=true&limit=5&page=2</p>
+            <p class="code">GET /api/items?all=true&limit=5&page=2</p>
             <h4>Sample Data</h4>
             <pre class="response">
     {
@@ -45,8 +45,8 @@
         "createdAt": "2024-12-01T13:31:57.414Z",
         "updatedAt": "2024-12-01T13:31:57.414Z"
     }
-            </pre>  
-           
+            </pre>
+
         </div>
 
         <!-- /api/items/:id Endpoint -->
@@ -58,7 +58,7 @@
                 <li><span class="parameter">id</span> (required): The unique identifier of the item.</li>
             </ul>
             <h4>Example Request</h4>
-            <p class="code">GET http://localhost:3000/api/items/1</p>
+            <p class="code">GET /api/items/1</p>
             <h4>Response</h4>
 
         </div>
@@ -72,7 +72,7 @@
                 <li><span class="parameter">id</span> (required): The unique identifier of the item to delete.</li>
             </ul>
             <h4>Example Request</h4>
-            <p class="code">DELETE http://localhost:3000/api/items/1</p>
+            <p class="code">DELETE /api/items/1</p>
 
         </div>
 
@@ -89,12 +89,12 @@
                 <span class="parameter">description</span>).
             </p>
             <h4>Example Request</h4>
-            <p class="code">PATCH http://localhost:3000/api/items/1</p>
-            <pre class="code">
-                {
-                    "name": "Updated Item Name",
-                    "description": "Updated Description"
-                }
+            <p class="code">PATCH /api/items/1</p>
+            <pre class="response">
+    {
+        "name": "Updated Item Name",
+        "description": "Updated Description"
+    }
         </pre>
         </div>
     </div>

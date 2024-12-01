@@ -3,17 +3,16 @@ body {
   font-family:cursive;
   margin: 0;
   background-color: #f9f2e7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: scroll;
 }
 
 .container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   flex-direction: column;
+  margin:auto;
+  width:80vw;
 }
 .hero-section {
   text-align: center;
@@ -57,7 +56,8 @@ h2 {
   padding: 5px 15px;
   font-family: monospace;
   border-radius: 9px;
-  font-size: 16px;
+  font-size: 1rem;
+  /* text-wrap: wrap; */
 }
 
 .parameter {
@@ -70,6 +70,14 @@ h2 {
   border: 1px solid #4caf50;
   border-radius: 9px;
   padding: 10px;
+
+  white-space: pre; /* Preserves whitespace and prevents word wrapping */
+  font-family: monospace; /* Ensures text is in monospaced font */
+  font-size: 1rem; /* Default font size */
+  background-color: #f4f4f4; /* Light background for better contrast */
+  padding: 10px; /* Padding for readability */
+  border-radius: 5px; /* Rounded corners */
+  overflow-x: auto; /* Adds horizontal scrolling if content overflows */
 }
 
 @keyframes fadeIn {
@@ -110,5 +118,22 @@ h2 {
 
   50% {
     transform: translateY(-10px);
+  }
+}
+
+/* @media screen and (width:) {
+  
+} */
+
+@media (max-width: 600px) {
+  .response {
+    font-size: 0.875rem; /* Smaller font size on small screens */
+    padding: 8px; /* Reduced padding on smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .response {
+    font-size: 1.2rem; /* Larger font size on medium screens */
   }
 }

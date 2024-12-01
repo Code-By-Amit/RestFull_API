@@ -26,7 +26,6 @@ app.set('view engine','ejs')
 app.get('/', (req, res) => {
     res.render('home.ejs')
 })
-
 app.listen(process.env.PORT, (err) => {
     connectToDB(process.env.MONGODB_URL)
     if (err) throw Error(err)
