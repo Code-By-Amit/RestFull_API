@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+  font-family:cursive;
+  margin: 0;
+  background-color: #f9f2e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-section {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: #d2691e;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #8b4513;
+  animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+h1,
+h2 {
+  color: #333;
+  /* color: #d2691e; */
+}
+
+.endpoint {
+  background-color: #f5f4f4;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  padding: 40px;
+  margin: 10px 0;
+  width: 100%;
+
+  & h3{
+    color: #d2691e;
+  }
+}
+
+.code {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  font-family: monospace;
+  border-radius: 9px;
+  font-size: 16px;
+}
+
+.parameter {
+  font-weight: bold;
+}
+
+.response {
+  margin-top: 20px;
+  background-color: #e9f9e9;
+  border: 1px solid #4caf50;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes steamRise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(-40px) scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
