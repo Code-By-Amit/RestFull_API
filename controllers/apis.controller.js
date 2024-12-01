@@ -35,11 +35,11 @@ async function handleGetItemById(req, res) {
 
 async function handleCreateItem(req, res) {
     try {
-        const { name, discription, price, quantity, itemId } = req.body;
+        const { name, description, price, quantity, itemId } = req.body;
         const newItem = new ITEM({
             itemId,
             name,
-            discription,
+            description,
             quantity,
             price
         })
