@@ -45,7 +45,7 @@ async function handleCreateItem(req, res) {
         })
         const savedItem = await newItem.save()
         const { _id, ...itemWithoutId } = savedItem.toObject();
-        res.status(201).json({ sucess: true, message: 'Item Created Sucessfully by amit', data: itemWithoutId })
+        res.status(201).json({ sucess: true, message: 'Item Created Sucessfully.', data: itemWithoutId })
     } catch (error) {
         console.log('Error in setData Controller, Error: ', error)
         res.status(500).json({ sucess: false, message: 'Internal Server Error', error })

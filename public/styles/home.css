@@ -42,7 +42,7 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 9px;
   padding: 40px;
-  margin: 10px 0;
+  margin: 10px 10px;
   width: 100%;
 
   & h3{

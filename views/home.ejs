@@ -46,7 +46,6 @@
         "updatedAt": "2024-12-01T13:31:57.414Z"
     }
             </pre>
-
         </div>
 
         <!-- /api/items/:id Endpoint -->
@@ -59,9 +58,44 @@
             </ul>
             <h4>Example Request</h4>
             <p class="code">GET /api/items/1</p>
-            <h4>Response</h4>
 
         </div>
+
+        <!-- /api/items Endpoint -->
+        <div class="endpoint">
+            <h3>Post /api/items/create</h3>
+            <p>Used to create/add item to the database.</p>
+            <h4>Required Field in requset body</h4>
+            <ul>
+                <li><span class="parameter">itemId</span></li>
+                <li><span class="parameter">name</span></li>
+                <li><span class="parameter">price</span></li>
+                <li><span class="parameter">quantity</span></li>
+            </ul>
+            <h4>Example Request</h4>
+            <p class="code">POST /api/items/create</p>
+            <h4>Response Data</h4>
+            <pre class="response">
+    { 
+      sucess: true,
+      message: 'Item Created Sucessfully',
+      data: {
+                "itemId": 1,
+                "name": "Laptop",
+                "description": "High-performance laptop",
+                "price": 1500,
+                "quantity": 10,
+                "__v": 0,
+                "createdAt": "2024-12-01T13:31:57.414Z",
+                "updatedAt": "2024-12-01T13:31:57.414Z"
+            }
+    }
+    
+            </pre>
+
+        </div>
+
+
 
         <!-- /api/items/:id DELETE Endpoint -->
         <div class="endpoint">

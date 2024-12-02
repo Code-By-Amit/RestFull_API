@@ -14,7 +14,7 @@ router.get('/items', handleGetItems)
 router.get('/items/:itemId', handleGetItemById)
 
 // Create items
-router.post('/create', handleCreateItem)
+router.post('/items/create', handleCreateItem)
 
 // Delete Items 
 router.post('/items/:itemId', handleItemDelete)
